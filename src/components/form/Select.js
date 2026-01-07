@@ -14,7 +14,7 @@ const Select = (props) => {
                 <option value="">{props.placeHolder}</option>
                 {props.options.map((option) => {
                     return (
-                        <option key={option.id} value={option.id}>
+                        <option key={option.id} value={option.value}>
                             {option.value}
                         </option>
                     )

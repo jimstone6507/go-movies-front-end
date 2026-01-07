@@ -26,7 +26,6 @@ const Movies = () => {
     }, []);
 
     return(
-    
         <div>
             <h2>Movies</h2>
             <hr />
@@ -42,17 +41,20 @@ const Movies = () => {
                     {movies.map((m) => (
                         <tr key={m.id}>
                             <td>
-                                <Link to={'/movies/${m.id}'}>
+                                <Link to={`/movies/${m.id}`}>
                                     {m.title}
                                 </Link>
                             </td>
                             <td>{m.release_date}</td>
                             <td>{m.mpaa_rating}</td>
-                        </tr>
+                        </tr>    
                     ))}
                 </tbody>
             </table>
         </div>
     )
 }
+
+
 export default Movies;
+
